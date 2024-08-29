@@ -1,0 +1,36 @@
+/* styles/toolbar.css */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  height: 2em;
+}
+
+.toolbar .left {
+  flex: 1;
+}
+
+.left p{
+  font-size: 1.5em;
+  color: #0094ea;
+  margin-left: 5px;
+  font-weight: 400;
+}
+.toolbar .right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.5em;
+}
+
+.toolbar button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.toolbar input[type="month"] {
+  padding: 5px;
+}

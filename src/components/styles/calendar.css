@@ -1,0 +1,164 @@
+.calendar {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+
+.selection {
+  position: absolute;
+  border: 1px dashed #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.date-row {
+  display: flex;
+  background: #f0f0f0;
+}
+
+.date-column {
+  flex: 1;
+  padding: 5px;
+}
+
+.date-info {
+  text-align: center;
+}
+
+.date-combined {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-name {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.resource-cell {
+  position: relative;
+  padding: 5px;
+  border: 1px solid #ddd;
+  height: 100px; /* Adjust based on your needs */
+}
+
+.event {
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: move;
+  position: relative;
+}
+
+.event-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.toolbar .left,
+.toolbar .middle,
+.toolbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar .left span {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.toolbar .middle button {
+  margin: 0 10px;
+}
+
+.calendar-body {
+  position: relative;
+  top: 3.3em;
+}
+
+.date-row {
+  display: flex;
+}
+
+.empty-cell {
+  flex: 0 0 110px;
+  height: 40px;
+  border: 1px solid transparent;
+}
+
+.date-column {
+  flex: 0 0 110px;
+  height: 40px;
+  width: 5em;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-info {
+  text-align: center;
+}
+
+.date-combined {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-date {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.date-day {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.resource-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.resource-name {
+  width: 110px;
+  height: 50px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: normal;
+  width: 6.3em;
+}
+
+.resource-cell {
+  flex: auto;
+  height: 50px;
+  border: 1px solid #ddd;
+  width: 6.7em;
+}

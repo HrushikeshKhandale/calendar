@@ -1,0 +1,14 @@
+.date-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.date-cell.empty {
+  background-color: #f9f9f9;
+}
